@@ -4,13 +4,13 @@ import { useDispatch } from 'react-redux'
 const Filter = () => {
   const dispatch = useDispatch()
 
-  const style = {
-    marginBottom: 10
-  }
-
   const handleChange = (event) => {
     const content = event.target.value
     dispatch(filterChange(content))
+  }
+
+  const style = {
+    marginBottom: 10
   }
 
   return (
